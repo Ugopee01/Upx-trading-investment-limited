@@ -1,12 +1,10 @@
-# Backend API — UPX TRADING/INVESTMENT LTD
+Backend API — UPX TRADING/INVESTMENT LTD
 
-## Overview
+Overview
 
 Node.js (Express) RESTful API for trading, portfolio management, user authentication, KYC/AML, payments, and integration with AI microservices.
 
----
-
-## Key Features
+Key Features
 
 - JWT authentication + 2FA (TOTP)
 - Role-based access control (RBAC)
@@ -15,9 +13,7 @@ Node.js (Express) RESTful API for trading, portfolio management, user authentica
 - Real-time price feeds (WebSockets)
 - Admin endpoints for compliance, regulatory, onboarding
 
----
-
-## Structure
+Structure
 
 ```
 /src
@@ -32,7 +28,7 @@ Node.js (Express) RESTful API for trading, portfolio management, user authentica
 
 ---
 
-## Main Endpoints
+Main Endpoints
 
 - `POST /auth/register` — Register user (with KYC/AML workflow)
 - `POST /auth/login` — Login, JWT & 2FA
@@ -48,7 +44,7 @@ Node.js (Express) RESTful API for trading, portfolio management, user authentica
 
 ---
 
-## Security
+Security
 
 - HTTPS enforced (behind load balancer)
 - All endpoints JWT-protected
@@ -57,13 +53,13 @@ Node.js (Express) RESTful API for trading, portfolio management, user authentica
 
 ---
 
-## Environment
+Environment
 
 Set variables in `.env` (see `.env.example`).
 
 ---
 
-## Scripts
+Scripts
 
 - `npm run lint`
 - `npm test`
@@ -71,7 +67,7 @@ Set variables in `.env` (see `.env.example`).
 
 ---
 
-## Integration
+Integration
 
 - AI Engine (Python): `/risk-score`, `/recommendations`
 - Market Data APIs: Nigerian/US stocks, crypto, forex
@@ -79,7 +75,7 @@ Set variables in `.env` (see `.env.example`).
 
 ---
 
-## See also
+See also
 
 - [AI Engine Spec](/ai-engine/README.md)
 - [Frontend API Usage](/frontend/README.md)
